@@ -10,10 +10,22 @@
         <link rel="stylesheet" href="main.css" type="text/css">   
     </head>
     <body>
-        <h1>Hello world!</h1>
+        <h1>My Goals for the Year</h1>
         
         <hr>
-        
+        <nav>
+            <ul>
+                <li>
+                    <a href="#html">Learning HTML</a>
+                </li>
+                <li>
+                    <a href="#vacation">Planning a vacation</a>
+                </li>
+            </ul>
+        </nav>
+
+        <hr>
+        <section id="html">
         <h2>I'm ready to learn HTML</h2>
         <p>This is my first web page.</p>
         
@@ -22,11 +34,13 @@
             <ol>
             <li>... I learn more about web dev.</li>
             <li>... I plan out my schedule.</li>
-            <li>... I use resources from <abbr title="Mozzila Developer Network"> MDN</abbr>.</li>      
+            <li>... I use resources from <abbr title="Mozzila Developer Network">
+                <a href="https://developer.mozilla.org/">MDN</a>
+            </abbr>.</li>      
             </ol>
-        
+        </section>
         <hr>
-        
+        <section id="vacation">
         <h2>I'm also planning a vacation.</h2>
         <p>I've been working hard and <em>really need a getaway</em>.</p>
         <p>I'm interested in winter sports and have always liked the mountains.</p>
@@ -56,9 +70,13 @@
             <dt>South America</dt>
             <dd> This is still dangerous.</dd>
         </dl>
-        
+        </section>
 
         <hr>
-        &lt;&lt;&lt;&copy; Elizabeth Berry &gt;&gt;&gt;
+        &lt;&lt;&lt;&copy; <a href="about.html"> Elizabeth Berry</a> &gt;&gt;&gt;
+
+        <p>
+            <a href="#">Back to top</a>
+        </p>
     </body>
 </html>

@@ -10,25 +10,32 @@
         <link rel="stylesheet" href="main.css" type="text/css">   
     </head>
     <body>
-        <h1>My Goals for the Year</h1>
+        <header>
+            <h1>My Goals for the Year</h1>
         
-        <hr>
-        <nav>
-            <ul>
+            <nav aria-label="primary navigation">
+                
+             <ul>
                 <li>
                     <a href="#html">Learning HTML</a>
                 </li>
                 <li>
                     <a href="#vacation">Planning a vacation</a>
                 </li>
-            </ul>
-        </nav>
-
-        <hr>
-        <section id="html">
+             </ul>
+            </nav>
+        </header>
+            <hr>
+            <main>
+        <article id="html">
         <h2>I'm ready to learn HTML</h2>
         <p>This is my first web page.</p>
-        
+        <section>
+            <h3>HTML5</h3>
+<!--This next section is how I would upload an image IF I had an image. Ah, here we go again...-->
+<!-- <img src="sample_folder/sample_path" alt="Insert image description here" title="I am learning HTML 5" width="insert_pixel_width"> height="insert_pixel_height(ie "300")" -->
+        </section>
+        <section>
         <h3>My daily schedule</h3>
         <p>Let me tell you how:</p>
             <ol>
@@ -38,17 +45,34 @@
                 <a href="https://developer.mozilla.org/">MDN</a>
             </abbr>.</li>      
             </ol>
+            <aside>
+                <details>
+                    <summary>
+                        Guess the <mark>number of hours</mark> I code per day?
+                    </summary>
+                    <p>Not as many as I should. When Jadon naps at <time datetime="14:00"> 2:00pm</time> or so every day, I squeeze in what I can. My goal is <time datetime="PT1H"> 1 hour</time> per day. I'm doing my best to keep up!</p>
+                </details>
+            </aside>
         </section>
+        </article>
         <hr>
-        <section id="vacation">
+        <article id="vacation">
         <h2>I'm also planning a vacation.</h2>
         <p>I've been working hard and <em>really need a getaway</em>.</p>
         <p>I'm interested in winter sports and have always liked the mountains.</p>
-        
+        <section>
         <h3>Places I'd like to visit.</h3>
         <ul>
         <li>
             <p>I've heard there's a lot of fun winter activities in <abbr title="Colorado">CO</abbr>. </p>
+<!--More photo dump I can't do yet...-->
+<!--<figure>
+    <img src="" alt="" title="" width="" height="" loading="lazy">
+    <figcaption>
+        Whatever caption I want to appear.
+    </figcaption>
+</figure>
+    (If you don't know the width/height, you can check by opening the img in VSC and looking at the black bar at the bottom of the screen.) (2 options for loading efficacy - "eager" - which is the default or "lazy" Choose "lazy" for anything you'd have to scroll to see) ("figure" lets us add captions. The <figcaption/> must be either the first element of the figure or the last element.) -->
         </li>
         <li>
             <p>I've heard good things about going here:</p>
@@ -59,7 +83,9 @@
         </li>
             <!--TODO: add more places-->
         </ul>
-        <h3>Places I'd like to avoid.</h3>
+    </section>
+    <section>    
+    <h3>Places I'd like to avoid.</h3>
         <dl>
             <dt>Mexico</dt>
             <dd>I hear this is <strong>dangerous!</strong></dd>
@@ -70,13 +96,17 @@
             <dt>South America</dt>
             <dd> This is still dangerous.</dd>
         </dl>
-        </section>
-
+    </section>
+        </article>
+    </main>
         <hr>
+        <footer>
+            <p>
         &lt;&lt;&lt;&copy; <a href="about.html"> Elizabeth Berry</a> &gt;&gt;&gt;
-
+            </p>
         <p>
             <a href="#">Back to top</a>
         </p>
+        </footer>
     </body>
 </html>
